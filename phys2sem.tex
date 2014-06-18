@@ -113,8 +113,42 @@ $ \phi_1, \phi_2... \phi_n $
 
 Напряженность поля диполя:
 \begin{equation}
-	\varphi = \frac {k p} {r} \cos {\alpha}
+	\vec{E} = \frac {k p} {r^3} \sqrt {1 - 3 \cos^2 {\alpha}}
 \end{equation}
+
+В однородном поле сила, действующая на диполь, равна нулю.
+
+\begin{equation}
+	\vec{F} = \vec{F_-} + \vec{F_+} = 0
+\end{equation}
+
+В неоднородном это не так:
+\begin{equation}
+\begin{gathered}
+	\vec{F} = \vec{F_-} + \vec{F_+} = q (\vec{E_-} + \vec{E_+}) = q \Delta \vec{E} \\
+	\Delta \vec{E} = \frac {\Delta E \vec{l}}{l} = \frac {\partial E} {\partial l} \vec{l} \Rightarrow \\
+	\vec{F} = q \frac {\partial E} {\partial l} \vec{l} = \vec{p} \frac {\partial E} {\partial l}
+\end{gathered}
+\end{equation}
+
+Момент сил относительно центра масс диполя:
+\begin{equation}
+\begin{gathered}
+	\vec{M} = \vec{M_-} + \vec{M_+} = [\vec{r_-} \times \vec{F_-}] + [\vec{r_+} \times \vec{F_+}] = \\
+	q ([\vec{r_+} \times \vec{E_+}] - [\vec{r_-} \times \vec{E_-}]) = q [(\vec{r_+} - \vec{r_-}) \times \vec{E}] = \\
+	[q \vec{l} \times \vec{E}] = [\vec{p} \times \vec{E}]
+\end{gathered}
+\end{equation}
+
+Потенциальная энергия диполя: 
+\begin{equation}
+\begin{gathered}
+	W = q \varphi_+ - q \varphi_- = q \Delta \varphi = \\
+	q \; \frac{\partial \varphi}{\partial l} l = -p E_l = \\
+	-p E \cos {\alpha}
+\end{gathered}
+\end{equation}
+
 
 Электронная поляризация возникает в результате смещения электронных облаков относительно центра ядер атомов или ионов под действием электрического поля. Наблюдается во всех без исключения диэлектриках, а в неполярных материалах является единственным видом поляризации.\\
 $\vec{p} = q\vec{l}$ - дипольный момент электрического диполя\\
@@ -142,6 +176,11 @@ $n$ - число частиц в единице объёма\\
 	P_n = \vec{P} \cdot \vec{n}
 \end{equation}
 $\vec{n}$ - нормаль.\\
+Теорема Гаусса для вектора поляризации:
+\begin{equation}
+	\oint\limits_S {(\vec{P} \cdot d \vec{S})} = -q'
+\end{equation}
+где $ q' $ - полный связанный заряд системы.
 Электрическая индукция:\\
 \begin{equation}
 	\vec{D} = \varepsilon _0 \vec{E} + \vec{P}
